@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek S | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+  <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-visible');
+        observer.unobserve(entry.target); // Animate once
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  // Target all animatable sections
+  document.querySelectorAll('section, .card, .profile-photo, .resume-btn, .testimonial').forEach(el => {
+    el.classList.add('animate-hidden');
+    observer.observe(el);
+  });
+</script>
+
+  <button class="toggle-btn" onclick="document.body.classList.toggle('dark')">Dark Mode</button>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#certs">Certifications</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+<div class="hero-wrapper">
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm <strong>Abhishek S</strong> — Web Developer | Programmer | Tech Enthusiast</p>
+  </header>
+</div>
+  
+
+
+  <div class="profile-photo">
+    <img src="/img/smiling-3d.jpg" alt="Profile Photo">
+  </div>
+
+  <div class="resume-btn">
+    <a href="Abhishek%20S%20-Resume.pdf" download>Download Resume</a>
+  </div>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I am currently pursuing my Master of Computer Applications (MCA) at Kristu Jyoti College, where I continue to build a solid foundation in computer science and software development. With hands-on experience in programming, web development, and database management, I have developed a keen interest in crafting scalable, user-centric digital solutions. I am passionate about staying current with emerging technologies and constantly strive to enhance my skills to deliver innovative and impactful software applications.</p>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Agrow - PHP & MySQL</h3><br>
+      <p>Responsive organic food web app with secure login and admin panel.</p>
+    </div><br>
+    <div class="card">
+      <h3>Agrow - Python & Django</h3><br>
+      <p>Rebuilt platform with Django, added secure auth and dashboard features.</p>
+    </div><br>
+    <div class="card">
+      <h3>User Authentication Module</h3><br>
+      <p>Login, register and role-based access in PHP + MySQL.</p>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="card">
+      <p><strong>Languages:</strong> C, C++</p>
+    </div>
+    <div class="card">
+      <p><strong>Web:</strong> HTML, CSS</p>
+    </div>
+    <div class="card">
+      <p><strong>Database:</strong> MySQL</p>
+    </div>
+    <div class="card">
+      <p><strong>OS:</strong> Windows, Linux</p>
+    </div>
+    <div class="card">
+      <p><strong>Tools:</strong> VS Code</p>
+    </div>
+  </div>
+</section>
+
+  <section class="certs" id="certs">
+    <h2>Achievements & Certifications</h2>
+    <div class="card">
+      <p><strong>Research Paper:</strong> Unreal Engine 5 vs Unity – IJETMS 2023</p>
+    </div><br>
+    <div class="card">
+      <p><strong>Certification:</strong> Web Design – Inovus Labs & Microsoft</p>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div class="card">
+      <img src="https://source.unsplash.com/400x250/?web,design" style="width:100%; border-radius:10px" alt="Web Design">
+    </div><br>
+    <div class="card">
+      <img src="https://source.unsplash.com/400x250/?coding,developer" style="width:100%; border-radius:10px" alt="Developer Work">
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:abhi48920@gmail.com">abhi48920@gmail.com</a></p>
+    <p>Phone: +91 8891302242</p>
+    <p>Location: Kottayam, Kerala, India</p>
+<div class="social-links">
+   <a href="https://instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://wa.me/918891302242" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
+    <div class="testimonial">
+      "Abhishek is a reliable and efficient developer who delivers quality work with dedication. Highly recommended!"
+    </div>
+  </section>
+  <footer class="site-footer">
+  <p>&copy; 2025 Abhishek S. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
