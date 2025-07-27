@@ -274,7 +274,7 @@ section h2 {
 
 .hero-wrapper {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-              url('/picture1.jpg') center/cover no-repeat;
+              url('/img/picture1.jpg') center/cover no-repeat;
 }
 
 .social-links {
